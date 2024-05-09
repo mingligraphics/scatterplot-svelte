@@ -25,7 +25,7 @@
   $: width = 550;
   $: innerWidth = width - margin.left - margin.right;
 
-  let height = 550;
+  let height = 650;
   let innerHeight = height - margin.top - margin.bottom;
   
   $: minX = data[0].Date;
@@ -97,9 +97,7 @@
 <section>
 <div class="sticky">
 <div class="chart-container" bind:clientWidth={width}>
-  {#if currentStep > 0}
   <h1>Acquired episodes</h1>
-  {/if}
   <svg {width} {height} on:mouseleave={()=>{hoveredData = null;}}>
     {#if currentStep > 0}
     <AxisX {xScale} {xTicks} {margin} {formatTime_xaxis} height = {innerHeight}/>
@@ -131,7 +129,6 @@
   {/each}
     {#each calloutData as d}
     <circle
-      transition:fade={{ delay: 250, duration: 300 }}
       class="circle-callout"
       cx={xScale(d.Date)}
       cy={yScale(d.Downloads)}
@@ -167,7 +164,7 @@
   <Tooltip data={hoveredData} {xScale} {yScale} width = {innerWidth}/>
   {/if}
   {#if currentStep == 6}
-  <p class="footnote">Note: Downloads data are not available for episodes released from Nov. 2015 to Oct. 2017.
+  <p class="footnote">Note: Data as of May 3. Downloads data are not available for episodes released from Nov. 2015 to Oct. 2017.
      Episodes within the past 180 days are projected downloads.
      The Porsche episode does not include YouTube data.
   <br>Source: Acquired's analysis of data from Transistor, Libsyn, Spotify and YouTube</p>
@@ -202,7 +199,7 @@
   height:100%;
   width:100%;
   max-width: 700px;
-  max-height: 550px;
+  max-height: 650px;
 }
 
 .sticky {
@@ -218,7 +215,7 @@
 }
   .circle-bg {
     transition: r 300ms ease, opacity 500ms ease,
-    cx 500ms ease, cy 500ms ease;
+    cx 400ms ease, cy 400ms ease;
     cursor: pointer;
 }
 

@@ -17,7 +17,7 @@
      and <span style="background-color:#F5E6A8;padding:3.5px;margin:1px;border-radius:4px;font-weight:500">Nvidia</span>
      —and then interviews with Charlie Munger and Jensen Huang. `,
     // 5 
-    `After focusing on tech, media and entertainment companies, Gilbert and Rosenthal told the story of luxury giant <span style="background-color:#FDC57C;padding:3px;margin:1px;border-radius:4px;font-weight:500">LVMH</span>. It turned out to be the most popular Acquired episode. `,
+    `After focusing on tech, media and entertainment companies, Gilbert and Rosenthal told the story of luxury giant <span style="background-color:#FDC57C;padding:3px;margin:1px;border-radius:4px;font-weight:500">LVMH</span>. It turned out to be the most popular Acquired episode at that time. `,
     // 6
     `The podcast has become so big that every episode these days has the potential to be its biggest episode yet.`
   ];
