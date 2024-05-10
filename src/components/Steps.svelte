@@ -9,7 +9,7 @@
       in October 2015.</p>`,
     `Since then, the show has released more than 150 episodes about many of the world’s most valuable companies.`,
     // 2 
-    `Their audience keeps growing. That first episode about Pixar had 400 downloads in the six months after it was released. Today’s episodes get more than 400,000. `,
+    `Their audience keeps growing. That first episode about Pixar had a few hundred downloads in the six months after it was released. Today’s episodes get more than 500,000.  `,
     // 3 
     `<p>One key episode in the history of Acquired was a show about <span style="background-color:#FDC57C;padding:3.5px;margin:1px;border-radius:4px;font-weight:500">Tesla</span>. It was their first episode that cracked two hours. Now their shows break three and four hours.</p>`,
     // 4 
@@ -19,7 +19,7 @@
     // 5 
     `After focusing on tech, media and entertainment companies, Gilbert and Rosenthal told the story of luxury giant <span style="background-color:#FDC57C;padding:3px;margin:1px;border-radius:4px;font-weight:500">LVMH</span>. It turned out to be the most popular Acquired episode at that time. `,
     // 6
-    `Their audience keeps growing. That first episode about Pixar had a few hundred downloads in the six months after it was released. Today’s episodes get more than 500,000.`,
+    `The podcast has become so big that every episode these days has the potential to be its biggest episode yet.`,
     `Note: Data as of May 3. Downloads data are not available for episodes released from Nov. 2015 to Oct. 2017. Episodes within the past 180 days are projected downloads. The Porsche episode does not include YouTube data.
 <br>Source: Acquired's analysis of data from Transistor, Libsyn, Spotify and YouTube`
   ];
