@@ -678,8 +678,8 @@
     "LabelsOrNot": "Y",
     "Labels": "Tesla",
     "LabelsGroup": "",
-    "XNudge": -20,
-    "YNudge": -10
+    "XNudge": -40,
+    "YNudge": -5
   },
   {
     "Date": "2018-08-06",
@@ -843,8 +843,8 @@
     "LabelsOrNot": "Y",
     "Labels": "Uber",
     "LabelsGroup": "",
-    "XNudge": -25,
-    "YNudge": -10
+    "XNudge": -35,
+    "YNudge": -5
   },
   {
     "Date": "2019-05-27",
@@ -987,7 +987,7 @@
     "Labels": "TikTok",
     "LabelsGroup": "",
     "XNudge": -45,
-    "YNudge": -10
+    "YNudge": -7
   },
   {
     "Date": "2019-12-19",
@@ -1624,7 +1624,7 @@
     "LabelsOrNot": "Y",
     "Labels": "Porsche",
     "LabelsGroup": "",
-    "XNudge": -10,
+    "XNudge": -5,
     "YNudge": -10
   },
   {
@@ -1690,8 +1690,8 @@
     "LabelsOrNot": "Y",
     "Labels": "Visa",
     "LabelsGroup": "",
-    "XNudge": 5,
-    "YNudge": 10
+    "XNudge": 3,
+    "YNudge": 15
   },
   {
     "Date": "2024-01-21",
@@ -1701,7 +1701,7 @@
     "LabelsOrNot": "Y",
     "Labels": "Novo Nordisk",
     "LabelsGroup": "",
-    "XNudge": -60,
+    "XNudge": -65,
     "YNudge": 20
   },
   {
@@ -1723,7 +1723,7 @@
     "LabelsOrNot": "Y",
     "Labels": "Renaissance",
     "LabelsGroup": "",
-    "XNudge": -60,
+    "XNudge": -65,
     "YNudge": 15
   }
 ]

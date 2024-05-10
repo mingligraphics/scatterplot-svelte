@@ -19,7 +19,9 @@
     // 5 
     `After focusing on tech, media and entertainment companies, Gilbert and Rosenthal told the story of luxury giant <span style="background-color:#FDC57C;padding:3px;margin:1px;border-radius:4px;font-weight:500">LVMH</span>. It turned out to be the most popular Acquired episode at that time. `,
     // 6
-    `The podcast has become so big that every episode these days has the potential to be its biggest episode yet.`
+    `Their audience keeps growing. That first episode about Pixar had a few hundred downloads in the six months after it was released. Today’s episodes get more than 500,000.`,
+    `Note: Data as of May 3. Downloads data are not available for episodes released from Nov. 2015 to Oct. 2017. Episodes within the past 180 days are projected downloads. The Porsche episode does not include YouTube data.
+<br>Source: Acquired's analysis of data from Transistor, Libsyn, Spotify and YouTube`
   ];
 </script>
 <div class="steps">

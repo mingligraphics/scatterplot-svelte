@@ -25,7 +25,7 @@
   $: width = 550;
   $: innerWidth = width - margin.left - margin.right;
 
-  let height = 650;
+  let height = 550;
   let innerHeight = height - margin.top - margin.bottom;
   
   $: minX = data[0].Date;
@@ -41,8 +41,33 @@
     .range([innerHeight, 0]);
 
   let initialData = data;
-  let renderedData = initialData;
-  let calloutData = initialData;
+
+  console.log(initialData);
+
+  let renderedData = [
+  {
+    "Date": "2019-12-30",
+    "Episode": "Pixar",
+    "Downloads": 300000,
+    "Callouts": "",
+    "LabelsOrNot": "Y",
+    "Labels": "Pixar",
+    "LabelsGroup": ""
+  }]
+
+  console.log(renderedData);
+
+  let calloutData = [
+  {
+    "Date": "2019-12-30",
+    "Episode": "Pixar",
+    "Downloads": 300000,
+    "Callouts": "",
+    "LabelsOrNot": "Y",
+    "Labels": "Pixar",
+    "LabelsGroup": ""
+  }];
+
   let hoveredData;
   let labelData = initialData.filter(d => d.LabelsOrNot === 'Y');
 
@@ -89,6 +114,10 @@
       renderedData = initialData.filter(d => d.Downloads != '');
       calloutData = initialData.filter(d => d.LabelsOrNot === 'Y');
     }
+    if(currentStep === 7){
+      renderedData = initialData.filter(d => d.Downloads != '');
+      calloutData = initialData.filter(d => d.LabelsOrNot === 'Y');
+    }
   }
 
 </script>
@@ -132,9 +161,9 @@
       class="circle-callout"
       cx={xScale(d.Date)}
       cy={yScale(d.Downloads)}
-      r={currentStep != 6 || hoveredData === d ? 10 : 5}
+      r={currentStep < 6 || hoveredData === d ? 10 : 5}
       opacity=0.96
-      fill={currentStep < 3 ? "none" : currentStep == 6 ? "#FAA224" : d.LabelsGroup == 'B' ? "#AC8FBE" : d.LabelsGroup == 'N' ? "#DFC462": "#FAA224"}
+      fill={currentStep < 3 ? "none" : currentStep > 5 ? "#FAA224" : d.LabelsGroup == 'B' ? "#AC8FBE" : d.LabelsGroup == 'N' ? "#DFC462": "#FAA224"}
       on:mouseover={()=>{
         currentStep > 0 ? hoveredData = d : null;
         }}
@@ -146,7 +175,7 @@
       aria-roledescription="circle"
     />
   {/each}
-  {#if currentStep == 6}
+  {#if currentStep == 6 || currentStep == 7}
    {#each labelData as d}
     <text
     transition:fade={{ delay: 250, duration: 300 }}
@@ -163,12 +192,12 @@
   {#if hoveredData && width > 400}
   <Tooltip data={hoveredData} {xScale} {yScale} width = {innerWidth}/>
   {/if}
-  {#if currentStep == 6}
-  <p class="footnote">Note: Data as of May 3. Downloads data are not available for episodes released from Nov. 2015 to Oct. 2017.
-     Episodes within the past 180 days are projected downloads.
-     The Porsche episode does not include YouTube data.
-  <br>Source: Acquired's analysis of data from Transistor, Libsyn, Spotify and YouTube</p>
-  {/if}
+  <!-- {#if currentStep == 6} -->
+<!-- <p class="footnote">Note: Data as of May 3. Downloads data are not available for episodes released from Nov. 2015 to Oct. 2017.
+   Episodes within the past 180 days are projected downloads.
+   The Porsche episode does not include YouTube data.
+<br>Source: Acquired's analysis of data from Transistor, Libsyn, Spotify and YouTube</p> -->
+<!-- {/if} -->
 </div>
 </div>
 <Steps bind:currentStep/>
@@ -199,7 +228,7 @@
   height:100%;
   width:100%;
   max-width: 700px;
-  max-height: 650px;
+  max-height: 550px;
 }
 
 .sticky {
@@ -223,8 +252,8 @@ h1{     color: #333333;
         font-family: Retina, sans-serif;
         font-size: 15px;
         font-weight: 500;
-        margin-bottom:4px;
         line-height: 20px;
+        margin-bottom: 10px;
     }
 
 .text-lables{
@@ -233,13 +262,14 @@ h1{     color: #333333;
     font-size: 14px;
   }
 
-.footnote{
+/* .footnote{
     color: #727272;
     font-weight: 300;
     font-family: Retina, sans-serif;
     font-size: 13px;
     line-height: 17px;
-    margin-top:14px;
-  }
+    margin-top:10px;
+    margin-bottom:15px;
+  } */
 
 </style>
